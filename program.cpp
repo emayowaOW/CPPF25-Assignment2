@@ -16,6 +16,16 @@ void draw_rectangle(BMP &bmp,int x, int y, int l, int h, int b, color c ){
     }
 }
 
+void draw_rectangle_gradient_color(BMP &bmp,int x, int y, int l, int h,  color c1, color c2 ){
+    if (l <= 0 || h <= 0) return;
+    
+    for(int i=0;i<=l;i++){
+         for(int ii=0;ii<=l;i++){
+            bmp.set_pixel(x+ii, y+i)
+         }
+    }
+}
+
 int main() {
     
     BMP bmp(500, 500); 
